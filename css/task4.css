@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', 'Verdana', sans-serif;
+  color: #212121;
+  line-height: 1.5;
+  font-size: 16 px;
+}
+
+.list :nth-child(3n + 1) {
+  background-color: #ff4081;
+}
+
+.list :nth-child(3n + 2) {
+  background-color: #ff9800;
+}
+
+.list :nth-child(3n + 3) {
+  background-color: #4caf50;
+}
+
+.list :not(:last-child) {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
