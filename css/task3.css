@@ -1,50 +1,18 @@
-.blog {
-  font-family: 'Roboto', 'Verdana', sans-serif;
-  color: #212121;
-  line-height: 1.5;
-  font-size: 16 px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.blog-head a {
-  text-decoration: none;
+.box {
+  min-height: 100vh;
+  background-image: url('../images/task-03-image.jpg');
+  background-position: center, center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
 }
 
-.blog-nav li {
-  list-style-type: none;
-}
-
-.blog-nav a {
-  color: inherit;
-  font-size: inherit;
-  text-decoration: none;
-}
-
-.blog-nav a:hover,
-.blog-nav a:focus {
-  color: #2196f3;
-}
-
-.blog-head {
-  display: inline-flex;
-}
-
-.list {
-  display: inline-flex;
-  padding: 12px 20px 12px 20px;
-}
-
-.blog-title {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blog-nav :not(:first-child) {
-  margin-left: 12px;
+.box::after {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.3));
 }

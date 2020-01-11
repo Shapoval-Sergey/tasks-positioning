@@ -1,26 +1,55 @@
-.list {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', 'Verdana', sans-serif;
-  color: #212121;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
   line-height: 1.5;
-  font-size: 16 px;
 }
 
-.list :nth-child(3n + 1) {
-  background-color: #ff4081;
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: #2a2a2a;
+  position: relative;
+  color: #ffffff;
 }
 
-.list :nth-child(3n + 2) {
-  background-color: #ff9800;
+.box {
+  display: flex;
+  width: 100px;
+  height: 100px;
 }
 
-.list :nth-child(3n + 3) {
-  background-color: #4caf50;
+.first {
+  background-color: chocolate;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
-.list :not(:last-child) {
-  margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.second {
+  background-color: blue;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.three {
+  background-color: purple;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.four {
+  background-color: turquoise;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
